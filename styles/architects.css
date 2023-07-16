@@ -89,6 +89,44 @@ nav{
 }
 
 }
+/* main section */
+main{
+    max: width 1440px; 
+    margin: 0 auto;
+}
+.team-container{
+    display: flex;
+    align-items: center;
+}
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.team-content{
+    padding-left: 70px;
+    padding-right: 70px;
+} 
+.content-title .quick-list{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #727272;
+}
+.content-title .mid-text{
+   color: #131313;
+   font-size: 2.5rem;
+    font-weight: 500;
+}
+.content-title .text-features{
+    color: #FF900E;
+    font-size: 2.5rem;
+     font-weight: 500; 
+}
+.content-description{
+    color: #727272;
+    font-size: 1rem;
+     font-weight: 400;   
+}
 
 
 
