@@ -15,6 +15,9 @@
     border: 0;
     background: #FF900E;
 }
+.text-light-gray{
+    color: #727272;
+}
 header{
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
@@ -59,9 +62,9 @@ nav ul a{
     font-size: 4rem;
     color:  #131313;
 }
-.banner-description{
+/* .banner-description{
     font-weight: 400;
-    color:  #727272;
+    color:  #727272; */
 }
 .banner img{
     width: 100%;
@@ -87,7 +90,7 @@ main{
     padding-left: 70px;
     padding-right: 70px;
 } 
-.content-title .quick-list{
+.content-title .text-light-gray{
     font-size: 2.5rem;
     font-weight: 500;
     color: #727272;
@@ -107,6 +110,32 @@ main{
     font-size: 1rem;
      font-weight: 400;   
 }
+/* Facts section  */
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #FFF; */
+}
+.facts-card-container.card{
+    border-radius: 8px;
+    border: 1px solid color red;
+    text-align: center;
+    padding: 30px;
+}
+.facts-card-container.card-stats{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.facts-card-container.card-title{
+    font-size: 1.25;
+    font-weight: 600;
+    margin-top: 5px;
+    
+}
+
 /* Responsive Queries */
 /* Responsive for mobaile device */
 @media screen  and (max-width:576px){
@@ -114,16 +143,19 @@ main{
         padding: 20px;
     }
     nav, 
-    .team-container{
+    .team-container, .facts-card-container{
         flex-direction: column;
     
     }
     .team-img{
         grid-template-columns: 1fr;
     }
-    .team-content{
+    .team-content, .facts-card-container{
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .facts-card-container{
+        gap: 20px;
     }
     
 }
